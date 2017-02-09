@@ -25,6 +25,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
 
+gem 'rubocop'
+
+gem "paperclip"
+
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
 # Use ActiveModel has_secure_password

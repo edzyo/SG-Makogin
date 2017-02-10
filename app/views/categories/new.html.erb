@@ -1,14 +1,11 @@
 <%if user_signed_in?%>
     <div class="container">
-      <h1>Створити пост!</h1>
-      <%= simple_form_for(@post,url: {action: :create}, class: 'form-horizontal') do |f|%>
+      <h1>Створити категорію!</h1>
+      <%= simple_form_for(@category,url: {action: :create}, class: 'form-horizontal') do |f|%>
           <div class="row">
             <div class="col">
               <div class="form-group">
                 <%= f.input :title %>
-                <%= f.input :description %>
-                <%= f.input :foto, as: :file %>
-                <%= f.collection_select :category_id, Category.all, :id, :title %>
               </div>
             </div>
           </div>

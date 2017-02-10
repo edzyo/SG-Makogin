@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'home#index'
-  resources :posts, only: [:new, :create]
+  resources :posts, only: [:new, :create, :show]
+  resources :categories, only: [:new, :create]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

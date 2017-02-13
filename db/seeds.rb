@@ -7,3 +7,14 @@
   #  Mayor.create(name: 'Emanuel', city: cities.first)
     User.create(email: 'user@sg.com', password: '111111')
     Category.create(title: 'Category_1')
+
+50.times do
+  Post.create(
+          title: Faker::Book.title,
+          description: Faker::Hipster.sentence(3),
+          user_id: 1,
+          category_id: 1
+
+  )
+
+end

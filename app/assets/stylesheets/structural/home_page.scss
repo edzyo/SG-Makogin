@@ -1,0 +1,40 @@
+.frame{
+  border-radius: 50%;
+  background-color: #ffffff;
+  height: 350px;
+  width: 350px;
+  border: 3px solid #4D4252;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-index-post-foto{
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-list-block-name{
+  color: #4D4252;
+  text-align: center;
+  margin-top: 20px;
+}
+#home-list-block-description{
+  text-align: left;
+  margin-top: 5px;
+  min-height: 170px;
+  max-height: 170px;
+  padding: 20px;
+  word-break: break-all;
+}
+
+#heading-home-text{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 55px;
+}

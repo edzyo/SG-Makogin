@@ -35,6 +35,12 @@ gem 'simple_form'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
+gem 'kaminari'
+
+gem 'faker'
+
+gem "gritter", "1.2.0"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

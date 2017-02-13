@@ -1,5 +1,31 @@
 <% if notice %>
-    <p class="notice"><%= notice %></p>
-<% elsif alert %>
-    <p class="alert"><%= alert %></p>
-<% end %>
+<script type="text/javascript" charset="utf-8">
+    $.gritter.add({
+        // heading of the notification
+        title: 'Повідомлення',
+        // the text inside the notification
+        text: '<%= notice %>',
+        time: 300000,
+        image: '<%= image_path "Bang_white.svg" %>'
+    });
+    <% end %>
+</script>
+<% if alert %>
+<script type="text/javascript" charset="utf-8">
+    $.gritter.add({
+        // heading of the notification
+        title: 'Увага!',
+        // the text inside the notification
+        text: '<%= alert %>',
+        time: 3000,
+        image: '<%= image_path "Bang_red.svg" %>'
+    });
+
+    <% end %>
+
+
+
+</script>
+<script>
+    $('.gritter-image').addClass('bang');
+</script>

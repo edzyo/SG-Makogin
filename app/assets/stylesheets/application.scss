@@ -1,2 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Pacifico');
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "structural/home_page";
+@import 'gritter';
+
+#body-font{
+  font-family: 'Caveat Brush', cursive;
+  font-family: 'Pacifico', cursive;
+}
+.gritter-image.bang {
+  margin-left: 15px;
+  width: 12px;
+}

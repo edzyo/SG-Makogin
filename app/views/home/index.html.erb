@@ -1,1 +1,22 @@
-<h1>Catalog</h1>
+<%= content_tag :h2, 'Пости відсутні' unless @posts.any? %>
+<h1 id="heading-home-text">Catalog</h1>
+<div class="row">
+  <% @posts.each do |post| %>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div>
+          <div class="frame">
+            <%= image_tag post.foto, id:'home-index-post-foto' %>
+          </div>
+          <div id="home-list-block-name">
+            <%= post.title %>
+          </div>
+          <div id="home-list-block-description">
+            <%= post.description %>
+          </div>
+        </div>
+
+      </div>
+  <% end %>
+</div>
+
+

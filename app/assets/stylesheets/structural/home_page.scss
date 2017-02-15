@@ -27,8 +27,7 @@
 #home-list-block-description{
   text-align: left;
   margin-top: 5px;
-  min-height: 170px;
-  max-height: 170px;
+  min-height: 100px;
   padding: 20px;
   word-break: break-all;
 }
@@ -37,4 +36,10 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 55px;
+}
+
+#post-show{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }

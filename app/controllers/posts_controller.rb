@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+  before_action :find_post, except: [:new, :create]
+
+  def show
+  end
 
   def new
     @post = Post.new
@@ -19,6 +23,10 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:title, :description, :foto, :category_id).merge(user_id: current_user.id)
+  end
+
+  def find_post
+    @post = Post.find(params[:id])
   end
 
 end

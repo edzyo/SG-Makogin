@@ -10,3 +10,6 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( structural/user_sign_in.css )
+Rails.application.config.assets.precompile += %w( adminlte.min.css )
+Rails.application.config.assets.precompile += %w( skin-green.min.css )
+Rails.application.config.assets.precompile += %w( adminlte.min.js )

@@ -1,3 +1,4 @@
+<div class="container">
 <%= content_tag :h2, 'Пости відсутні' unless @posts.any? %>
 <h1 id="heading-home-text">Catalog</h1>
 <div class="row">
@@ -13,6 +14,9 @@
           <div id="home-list-block-description">
             <%= post.description %>
           </div>
+          <div id="home-list-block-price">
+            <%= post.price %>
+          </div>
           <div class="btn btn-info" id="post-show">
             <%= link_to 'Детальніше', post %>
           </div>
@@ -22,5 +26,5 @@
   <% end %>
   <%= paginate @posts %>
 </div>
-
+</div>
 

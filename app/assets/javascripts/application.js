@@ -14,5 +14,6 @@
 //= require bootstrap-sprockets
 //= require gritter
 //= require jquery_ujs
+//= require admin-lte/app.min
 //= require turbolinks
 //= require_tree .

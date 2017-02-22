@@ -1,4 +1,9 @@
-class CategoriesController < ApplicationController
+module Adminpanel
+class CategoriesController < AdministrativeController
+
+  def index
+    @category = Category.all
+  end
 
   def new
     @category = Category.new
@@ -21,4 +26,5 @@ class CategoriesController < ApplicationController
     params.require(:category).permit(:title)
   end
 
+end
 end

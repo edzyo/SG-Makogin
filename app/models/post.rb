@@ -5,5 +5,6 @@ class Post < ActiveRecord::Base
   validates_attachment_content_type :foto, content_type: /\Aimage\/.*\z/
   validates :title, presence: true, length: { in: 2..30 }
   validates :description, presence: true, length: { minimum: 3 }, allow_blank: true
+  validates :price, presence: true
 
 end

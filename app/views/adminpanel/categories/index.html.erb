@@ -1,0 +1,5 @@
+<%=link_to 'Створити категорію', new_adminpanel_category_path %></br>
+
+<% @category.each do |category| %>
+    <%= category.title %></br>
+<% end %>

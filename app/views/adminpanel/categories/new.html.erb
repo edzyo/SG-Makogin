@@ -1,16 +1,16 @@
-<%if user_signed_in?%>
+<%if admin_signed_in?%>
     <div class="container">
       <h1>Створити категорію!</h1>
       <%= simple_form_for(@category,url: {action: :create}, class: 'form-horizontal') do |f|%>
           <div class="row">
-            <div class="col">
+            <div class=" col-lg-offset-1 col-lg-9  col-md-10 ">
               <div class="form-group">
-                <%= f.input :title %>
+                <%= f.input :title%>
               </div>
             </div>
           </div>
-          <div class="col">
-            <%= f.button :submit %>
+          <div class="button-display-flex">
+            <%= f.button :submit, id: 'category-submit-center' %>
           </div>
       <% end %>
     </div>

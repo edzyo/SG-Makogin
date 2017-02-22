@@ -5,12 +5,17 @@
 #
   # cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
   #  Mayor.create(name: 'Emanuel', city: cities.first)
+
+Admin.first_or_create(email: 'admin@sg.com',
+                      password: 'password')
+
     User.create(email: 'user@sg.com', password: '111111')
     Category.create(title: 'Category_1')
 
 50.times do
   Post.create(
           title: Faker::Book.title,
+          price: 150,
           description: Faker::Hipster.sentence(3),
           user_id: 1,
           category_id: 1

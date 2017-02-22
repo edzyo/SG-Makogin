@@ -4,6 +4,9 @@
 @import "structural/home_page";
 @import 'gritter';
 @import "structural/post_show";
+@import "admin-lte/AdminLTE.min";
+@import "font-awesome";
+@import "structural/landing_page";
 
 #body-font{
   font-family: 'Caveat Brush', cursive;
@@ -12,4 +15,12 @@
 .gritter-image.bang {
   margin-left: 15px;
   width: 12px;
+}
+#category-submit-center{
+background-color: greenyellow;
+}
+.button-display-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

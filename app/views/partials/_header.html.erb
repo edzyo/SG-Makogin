@@ -1,22 +1,36 @@
-<header>
-  <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="logo-image">
-      <%= link_to root_path do  %>
-          <%= image_tag ('shop.jpg') %>
-      <% end %>
+<header class="clearfix">
+  <nav id="header-nav" class="menu-bar navbar navbar-default navbar-fixed-top clearfix" >
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="logo-image">
+          <%= link_to root_path do  %>
+              <%= image_tag ('shop.jpg') %>
+          <% end %>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+          <li class="menu active landing-link-color"><%=link_to "Home", home_index_path, class: 'landing-link-color' %></li>
+          </li>
+          <li class="page-scroll">
+          <li class="menu active"><%=link_to "Home", home_index_path, class: 'page landing-link-color' %></li>
+          </li>
+          <li class="page-scroll">
+          <li class="menu active"><%=link_to "Home", home_index_path, class: 'page landing-link-color' %></li>
+          </li>
+          <li class="page-scroll">
+          <li class="menu active"><%=link_to "Home", home_index_path, class: 'page landing-link-color' %></li>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="menu-right collapse navbar-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="menu"><%=link_to "Home", home_index_path, class: 'landing-link-color' %></li>
-        <li class="menu"><%=link_to "Home", home_index_path, class: 'landing-link-color'  %></li>
-        <li class="menu"><%=link_to "Home", home_index_path, class: 'landing-link-color'  %></li>
-        <li class="menu"><%=link_to "Home", home_index_path, class: 'landing-link-color'  %></li>
-        <li class="menu"><%=link_to "Home", home_index_path, class: 'landing-link-color'  %></li>
-        <li class="menu"><%=link_to "Home", home_index_path, class: 'landing-link-color'  %></li>
-      </ul>
-
-    </div>
-  </div>
   </nav>
 </header>

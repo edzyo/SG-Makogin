@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Sansita');
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "structural/home_page";
@@ -7,10 +7,10 @@
 @import "admin-lte/AdminLTE.min";
 @import "font-awesome";
 @import "structural/landing_page";
+@import "structural/icon";
 
 #body-font{
-  font-family: 'Caveat Brush', cursive;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Sansita', sans-serif;
 }
 .gritter-image.bang {
   margin-left: 15px;
